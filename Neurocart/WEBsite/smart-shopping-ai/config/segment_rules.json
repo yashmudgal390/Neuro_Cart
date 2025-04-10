@@ -1,0 +1,21 @@
+{
+  "rfm_weights": {
+    "recency": 0.3,
+    "frequency": 0.3,
+    "monetary": 0.4
+  },
+  "kmeans_clusters": 5,
+  "segment_tags": [
+    "frequent_buyer",
+    "discount_seeker",
+    "new_user",
+    "at_risk",
+    "loyal_customer"
+  ],
+  "segment_thresholds": {
+    "loyal_customer": 0.8,
+    "frequent_buyer": 0.6,
+    "at_risk": 90,
+    "new_user": 1
+  }
+} 

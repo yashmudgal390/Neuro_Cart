@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block title %}Smart Shopping AI - Personalized Recommendations{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title text-center mb-4">Get Personalized Product Recommendations</h2>
+                <form method="POST" action="{{ url_for('get_recommendations') }}">
+                    {{ form.csrf_token }}
+                    <div class="mb-3">
+                        <label for="age" class="form-label">Age</label>
+                        {{ form.age(class="form-control", placeholder="Enter your age") }}
+                        {% if form.age.errors %}
+                            {% for error in form.age.errors %}
+                                <div class="text-danger">{{ error }}</div>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div class="mb-3">
+                        <label for="gender" class="form-label">Gender</label>
+                        {{ form.gender(class="form-select") }}
+                        {% if form.gender.errors %}
+                            {% for error in form.gender.errors %}
+                                <div class="text-danger">{{ error }}</div>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div class="mb-3">
+                        <label for="location" class="form-label">Location</label>
+                        {{ form.location(class="form-control", placeholder="Enter your location") }}
+                        {% if form.location.errors %}
+                            {% for error in form.location.errors %}
+                                <div class="text-danger">{{ error }}</div>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div class="mb-3">
+                        <label for="interests" class="form-label">Interests (comma-separated)</label>
+                        {{ form.interests(class="form-control", placeholder="e.g., electronics, sports, fashion") }}
+                        {% if form.interests.errors %}
+                            {% for error in form.interests.errors %}
+                                <div class="text-danger">{{ error }}</div>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="fas fa-magic me-2"></i>Get Recommendations
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">How It Works</h3>
+                <div class="row">
+                    <div class="col-md-4 text-center mb-3">
+                        <i class="fas fa-user-circle fa-3x text-primary mb-3"></i>
+                        <h5>1. Share Your Preferences</h5>
+                        <p>Tell us about yourself and your interests to help us understand your shopping style.</p>
+                    </div>
+                    <div class="col-md-4 text-center mb-3">
+                        <i class="fas fa-brain fa-3x text-primary mb-3"></i>
+                        <h5>2. AI Analysis</h5>
+                        <p>Our AI system analyzes your profile and matches it with our product catalog.</p>
+                    </div>
+                    <div class="col-md-4 text-center mb-3">
+                        <i class="fas fa-gift fa-3x text-primary mb-3"></i>
+                        <h5>3. Get Recommendations</h5>
+                        <p>Receive personalized product recommendations tailored just for you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

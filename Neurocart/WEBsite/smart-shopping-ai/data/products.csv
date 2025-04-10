@@ -1,0 +1,60 @@
+product_id,name,description,price,category,popularity,stock,subcategory,brand,average_rating,product_rating,customer_rating,holiday_item,season,geographic_origin,similar_products,probability
+P001,Wireless Headphones,High-quality wireless headphones with noise cancellation,99.99,Electronics,0.85,50,Electronics,Brand A,4.5,3.5,0.8,No,Summer,USA,"['Headphones', 'Smartphone']",0.91
+P002,Running Shoes,Lightweight running shoes with cushioned soles,79.99,Sports,0.72,30,Sports,Brand B,4.2,2.3,0.26,No,Summer,Canada,"['Shoes', 'Running']",0.91
+P003,Coffee Maker,Programmable coffee maker with thermal carafe,49.99,Home,0.68,25,Home,Brand C,4.7,2.1,0.21,Yes,Winter,India,"['Coffee', 'Kitchen']",0.26
+P004,Smart Watch,Fitness tracker with heart rate monitor,129.99,Electronics,0.91,40,Electronics,Brand D,4.2,2.4,0.74,Yes,Spring,Canada,"['Smartphone', 'Fitness']",0.60
+P005,Yoga Mat,Non-slip yoga mat with carrying strap,29.99,Sports,0.65,60,Sports,Brand E,4.7,2.5,0.68,No,Winter,Canada,"['Yoga', 'Sports']",0.70
+P006,Blender,High-speed blender for smoothies and more,69.99,Home,0.58,20,Home,Brand F,4.2,2.6,0.64,No,Summer,Germany,"['Kitchen', 'Smoothies']",0.79
+P007,Laptop Backpack,Water-resistant laptop backpack with USB charging port,59.99,Accessories,0.63,45,Accessories,Brand G,4.2,3.8,0.39,Yes,Summer,USA,"['Backpack', 'Laptop']",0.92
+P008,Gaming Mouse,RGB gaming mouse with programmable buttons,49.99,Electronics,0.77,35,Electronics,Brand H,4.7,2.1,0.21,Yes,Winter,India,"['Mouse', 'Gaming']",0.26
+P009,Desk Lamp,LED desk lamp with adjustable brightness,39.99,Home,0.54,30,Home,Brand I,4.2,4.2,0.83,No,Winter,Germany,"['Lamp', 'Home']",0.36
+P010,Water Bottle,Insulated water bottle that keeps drinks cold for 24 hours,24.99,Sports,0.70,55,Sports,Brand J,4.7,2.5,0.68,No,Winter,Canada,"['Water', 'Sports']",0.70
+P011,Wireless Charger,Fast wireless charging pad for smartphones,34.99,Electronics,0.82,40,Electronics,Brand K,4.2,2.4,0.74,Yes,Spring,Canada,"['Charger', 'Smartphone']",0.60
+P012,Resistance Bands,Set of 5 resistance bands for strength training,19.99,Sports,0.61,70,Sports,Brand L,4.2,2.3,0.26,No,Summer,Canada,"['Strength', 'Sports']",0.91
+P013,Throw Blanket,Soft and cozy throw blanket for the couch,44.99,Home,0.67,25,Home,Brand M,4.7,2.1,0.21,No,Winter,India,"['Blanket', 'Couch']",0.26
+P014,Sunglasses,Polarized sunglasses with UV protection,89.99,Accessories,0.59,30,Accessories,Brand N,4.2,2.4,0.74,No,Summer,USA,"['Sunglasses', 'UV']",0.60
+P015,Portable Speaker,Waterproof portable speaker with 12-hour battery life,79.99,Electronics,0.88,35,Electronics,Brand O,4.2,2.3,0.26,No,Summer,Canada,"['Speaker', 'Portable']",0.91
+P016,Hiking Boots,Waterproof hiking boots with ankle support,119.99,Sports,0.64,20,Sports,Brand P,4.2,2.4,0.74,No,Summer,Canada,"['Boots', 'Hiking']",0.91
+P017,Food Processor,Multi-function food processor for chopping and slicing,89.99,Home,0.53,15,Home,Brand Q,4.7,2.5,0.68,No,Winter,India,"['Food', 'Kitchen']",0.26
+P018,Wallet,RFID-blocking leather wallet with multiple card slots,49.99,Accessories,0.57,40,Accessories,Brand R,4.2,2.3,0.26,No,Summer,Canada,"['Wallet', 'Accessories']",0.91
+P019,Tablet Stand,Adjustable tablet stand with non-slip base,29.99,Electronics,0.60,50,Electronics,Brand S,4.2,2.4,0.74,Yes,Spring,Canada,"['Tablet', 'Stand']",0.60
+P020,Jump Rope,Adjustable jump rope with weighted handles,14.99,Sports,0.55,80,Sports,Brand T,4.2,2.3,0.26,No,Summer,Canada,"['Jump', 'Rope']",0.91
+P021,Throw Pillows,Set of 2 decorative throw pillows,39.99,Home,0.62,30,Home,Brand U,4.7,2.1,0.21,No,Winter,India,"['Pillow', 'Home']",0.26
+P022,Phone Case,Protective phone case with shock-absorbing design,24.99,Accessories,0.86,60,Accessories,Brand V,4.2,2.4,0.74,No,Summer,USA,"['Case', 'Protective']",0.60
+P023,Keyboard,Mechanical keyboard with RGB backlight,89.99,Electronics,0.75,25,Electronics,Brand W,4.7,2.5,0.68,No,Winter,Canada,"['Keyboard', 'RGB']",0.70
+P024,Yoga Block Set,Set of 2 yoga blocks for proper alignment,19.99,Sports,0.58,45,Sports,Brand X,4.2,2.6,0.64,No,Summer,Germany,"['Yoga', 'Sports']",0.79
+P025,Wall Clock,Modern wall clock with silent movement,34.99,Home,0.51,20,Home,Brand Y,4.2,2.3,0.26,No,Winter,India,"['Clock', 'Home']",0.26
+P026,Watch Band,Interchangeable watch band with quick-release pins,29.99,Accessories,0.63,35,Accessories,Brand Z,4.7,2.1,0.21,No,Winter,India,"['Band', 'Watch']",0.26
+P027,Webcam,HD webcam with built-in microphone,59.99,Electronics,0.79,30,Electronics,Brand AA,4.2,2.4,0.74,No,Summer,USA,"['Webcam', 'Microphone']",0.60
+P028,Dumbbells,Set of 2 adjustable dumbbells,99.99,Sports,0.66,15,Sports,Brand AB,4.2,2.3,0.26,No,Summer,Canada,"['Dumbbell', 'Sports']",0.91
+P029,Plant Pot,Self-watering plant pot with drainage system,39.99,Home,0.56,40,Home,Brand AC,4.7,2.5,0.68,No,Winter,India,"['Plant', 'Home']",0.26
+P030,Belt,Genuine leather belt with adjustable buckle,44.99,Accessories,0.61,50,Accessories,Brand AD,4.2,2.3,0.26,No,Summer,Canada,"['Belt', 'Leather']",0.91
+P031,Monitor Stand,Ergonomic monitor stand with cable management,49.99,Electronics,0.71,25,Electronics,Brand AE,4.7,2.1,0.21,No,Winter,India,"['Monitor', 'Stand']",0.26
+P032,Jump Rope Mat,Non-slip mat for jump rope exercises,24.99,Sports,0.54,30,Sports,Brand AF,4.2,2.4,0.74,No,Summer,Canada,"['Mat', 'Jump']",0.60
+P033,Throw Blanket,Weighted throw blanket for better sleep,69.99,Home,0.73,20,Home,Brand AG,4.7,2.5,0.68,No,Winter,India,"['Blanket', 'Sleep']",0.26
+P034,Scarf,Soft and warm winter scarf,34.99,Accessories,0.65,40,Accessories,Brand AH,4.2,2.3,0.26,No,Winter,India,"['Scarf', 'Winter']",0.26
+P035,USB Hub,7-port USB hub with power adapter,39.99,Electronics,0.68,35,Electronics,Brand AI,4.7,2.1,0.21,No,Winter,India,"['USB', 'Hub']",0.26
+P036,Exercise Ball,Anti-burst exercise ball with pump,29.99,Sports,0.59,45,Sports,Brand AJ,4.2,2.4,0.74,No,Summer,Canada,"['Ball', 'Exercise']",0.60
+P037,Desk Organizer,Multi-compartment desk organizer,24.99,Home,0.52,30,Home,Brand AK,4.7,2.5,0.68,No,Winter,India,"['Organizer', 'Desk']",0.26
+P038,Gloves,Touchscreen-compatible winter gloves,29.99,Accessories,0.64,50,Accessories,Brand AL,4.2,2.3,0.26,No,Winter,India,"['Gloves', 'Winter']",0.26
+P039,Mouse Pad,Extended mouse pad with non-slip base,19.99,Electronics,0.57,60,Electronics,Brand AM,4.7,2.1,0.21,No,Winter,India,"['Pad', 'Mouse']",0.26
+P040,Resistance Band,Loop resistance band for leg workouts,14.99,Sports,0.62,70,Sports,Brand AN,4.2,2.4,0.74,No,Summer,Canada,"['Band', 'Resistance']",0.60
+P041,Photo Frame,Digital photo frame with 8-inch display,79.99,Home,0.70,15,Home,Brand AO,4.7,2.5,0.68,No,Winter,India,"['Frame', 'Photo']",0.26
+P042,Hat,Adjustable baseball cap with curved brim,24.99,Accessories,0.58,55,Accessories,Brand AP,4.2,2.3,0.26,No,Winter,India,"['Hat', 'Baseball']",0.26
+P043,Headphone Stand,Wooden headphone stand with cable management,34.99,Electronics,0.66,30,Electronics,Brand AQ,4.7,2.1,0.21,No,Winter,India,"['Stand', 'Headphone']",0.26
+P044,Sports Bag,Lightweight sports bag with shoe compartment,49.99,Sports,0.61,25,Sports,Brand AR,4.2,2.4,0.74,No,Summer,Canada,"['Bag', 'Sports']",0.60
+P045,Throw Pillows,Set of 4 decorative throw pillows,59.99,Home,0.67,20,Home,Brand AS,4.7,2.5,0.68,No,Winter,India,"['Pillow', 'Home']",0.26
+P046,Socks,Performance socks with moisture-wicking technology,19.99,Accessories,0.72,80,Accessories,Brand AT,4.2,2.3,0.26,No,Winter,India,"['Socks', 'Performance']",0.26
+P047,Microphone,USB condenser microphone for streaming,89.99,Electronics,0.74,20,Electronics,Brand AU,4.7,2.1,0.21,No,Winter,India,"['Microphone', 'USB']",0.26
+P048,Yoga Strap,Adjustable yoga strap for stretching,14.99,Sports,0.55,60,Sports,Brand AV,4.2,2.4,0.74,No,Summer,Canada,"['Strap', 'Yoga']",0.60
+P049,Wall Art,Canvas wall art with modern design,69.99,Home,0.63,15,Home,Brand AW,4.7,2.5,0.68,No,Winter,India,"['Art', 'Wall']",0.26
+P050,Umbrella,Compact folding umbrella with wind-resistant design,29.99,Accessories,0.69,40,Accessories,Brand AX,4.2,2.3,0.26,No,Summer,USA,"['Umbrella', 'Wind']",0.60
+P2000,Fashion,Jeans,1713,Brand B,4.2,2.3,0.26,No,Summer,Canada,"['Jeans', 'Shoes']",0.91
+P2001,Beauty,Lipstick,1232,Brand C,4.7,2.1,0.21,Yes,Winter,India,"['Moisturizer', 'Makeup']",0.26
+P2002,Electronics,Laptop,4833,Brand B,3.5,2.4,0.74,Yes,Spring,Canada,"['Headphones', 'Smartphone']",0.60
+P2003,Books,Comics,382,Brand D,3.4,4.2,0.83,No,Winter,Germany,"['Biography', 'Fiction']",0.36
+P2004,Home Decor,Cushions,856,Brand C,3.2,3.3,0.08,Yes,Summer,USA,"['Lamp', 'Curtains']",0.45
+P2005,Fashion,T-shirt,1451,Brand A,4.7,2.5,0.68,No,Winter,Canada,"['T-shirt', 'Jeans']",0.70
+P2006,Books,Comics,217,Brand C,3.9,2.6,0.64,No,Summer,Germany,"['Comics']",0.79
+P2007,Books,Comics,3823,Brand B,4.2,3.8,0.39,Yes,Summer,USA,"['Comics', 'Biography']",0.92
+P2008,Books,Non-fiction,3288,Brand B,3.1,4.3,0.73,Yes,Autumn,India,"['Fiction', 'Biography']",0.17 

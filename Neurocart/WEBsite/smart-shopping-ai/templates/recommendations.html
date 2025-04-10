@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+
+{% block title %}Your Personalized Recommendations{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="card mb-4">
+        <div class="card-header bg-primary text-white">
+            <h2 class="mb-0">Your Profile</h2>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-3">
+                    <strong>Age:</strong> {{ age }}
+                </div>
+                <div class="col-md-3">
+                    <strong>Gender:</strong> {{ gender }}
+                </div>
+                <div class="col-md-3">
+                    <strong>Location:</strong> {{ location }}
+                </div>
+                <div class="col-md-3">
+                    <strong>Interests:</strong> {{ interests|join(', ') }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="mb-4">Recommended Products</h2>
+
+    {% if recommendations %}
+        <div class="row">
+            {% for product in recommendations %}
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ product.name }}</h5>
+                            <p class="card-text">{{ product.description }}</p>
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-primary">{{ product.category }}</span>
+                                <span class="text-success font-weight-bold">${{ "%.2f"|format(product.price) }}</span>
+                            </div>
+                            <div class="progress mb-2">
+                                <div class="progress-bar" role="progressbar" 
+                                     style="width: {{ (product.final_score * 100)|round }}%"
+                                     aria-valuenow="{{ (product.final_score * 100)|round }}" 
+                                     aria-valuemin="0" 
+                                     aria-valuemax="100">
+                                    Match: {{ (product.final_score * 100)|round }}%
+                                </div>
+                            </div>
+                            <button class="btn btn-primary w-100 add-to-cart" 
+                                    data-product-id="{{ product.product_id }}"
+                                    data-customer-id="{{ customer_id }}"
+                                    onclick="trackProductClick(this)">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="alert alert-info">
+            <i class="fas fa-info-circle"></i> No recommendations found. Try updating your interests!
+        </div>
+    {% endif %}
+
+    <div class="text-center mt-4">
+        <a href="{{ url_for('index') }}" class="btn btn-secondary">
+            <i class="fas fa-arrow-left"></i> Update Preferences
+        </a>
+    </div>
+</div>
+
+<script>
+function trackProductClick(button) {
+    const productId = button.getAttribute('data-product-id');
+    const customerId = button.getAttribute('data-customer-id');
+    
+    // Send event data to server
+    fetch('/api/track_event', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            customer_id: customerId,
+            product_id: productId,
+            event_type: 'add_to_cart',
+            timestamp: new Date().toISOString()
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            button.innerHTML = '<i class="fas fa-check"></i> Added to Cart';
+            button.classList.remove('btn-primary');
+            button.classList.add('btn-success');
+            button.disabled = true;
+        }
+    })
+    .catch(error => console.error('Error:', error));
+}
+</script>
+{% endblock %} 

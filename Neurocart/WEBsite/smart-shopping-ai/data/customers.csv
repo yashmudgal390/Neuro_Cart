@@ -1,0 +1,10 @@
+Customer_ID,Age,Gender,Location,Browsing_History,Purchase_History,Average_Order_Value,Holiday_Shopper,Season
+C1000,28,Female,Chennai,"['Books', 'Fashion']","['Biography', 'Shoes']",4806.99,No,Winter
+C1001,27,Male,Delhi,"['Books', 'Fashion']","['Biography', 'T-shirt']",795.03,Yes,Autumn
+C1002,34,Other,Chennai,"['Electronics', 'Fashion']","['Smartphone', 'Jeans']",1742.45,Yes,Summer
+C1003,23,Male,Bangalore,"['Home Decor', 'Fashion']","['Wall Art', 'Shoes']",2023.16,No,Autumn
+C1004,24,Other,Kolkata,"['Fashion', 'Books']","['Shoes', 'Comics']",794.76,No,Winter
+C1005,22,Other,Bangalore,"['Home Decor', 'Fashion']","['Curtains', 'T-shirt']",2504.65,No,Winter
+C1006,30,Male,Kolkata,"['Home Decor', 'Electronics']","['Cushions', 'Laptop']",2171.58,No,Autumn
+C1007,38,Female,Delhi,"['Home Decor', 'Fashion']","['Wall Art', 'Jeans']",1188.17,Yes,Summer
+C1008,52,Male,Kolkata,"['Home Decor', 'Electronics']","['Lamp', 'Smartphone']",3104.72,Yes,Autumn 

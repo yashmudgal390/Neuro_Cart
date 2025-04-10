@@ -1,0 +1,143 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 text-center mb-5">
+            <h1 class="display-4 mb-3">Discover Your Perfect Products</h1>
+            <p class="lead text-muted">
+                Our AI-powered recommendation system analyzes your preferences to find the products that best match your needs.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title mb-4">Get Personalized Recommendations</h2>
+                    <form method="POST" action="{{ url_for('get_recommendations') }}">
+                        {{ form.csrf_token }}
+                        
+                        <div class="mb-4">
+                            <label class="form-label">Age</label>
+                            {{ form.age(class="form-control form-control-lg", placeholder="Enter your age") }}
+                            {% if form.age.errors %}
+                            <div class="alert alert-danger mt-2">
+                                {% for error in form.age.errors %}
+                                <small>{{ error }}</small>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label">Gender</label>
+                            {{ form.gender(class="form-select form-select-lg") }}
+                            {% if form.gender.errors %}
+                            <div class="alert alert-danger mt-2">
+                                {% for error in form.gender.errors %}
+                                <small>{{ error }}</small>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label">Location</label>
+                            {{ form.location(class="form-control form-control-lg", placeholder="Enter your location") }}
+                            {% if form.location.errors %}
+                            <div class="alert alert-danger mt-2">
+                                {% for error in form.location.errors %}
+                                <small>{{ error }}</small>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label">Interests</label>
+                            {{ form.interests(class="form-control form-control-lg", placeholder="Enter your interests (e.g., sports, electronics, books)") }}
+                            {% if form.interests.errors %}
+                            <div class="alert alert-danger mt-2">
+                                {% for error in form.interests.errors %}
+                                <small>{{ error }}</small>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg w-100">
+                            <i class="fas fa-magic me-2"></i>Get Recommendations
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title mb-4">How It Works</h2>
+                    
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="bg-primary text-white rounded-circle p-3 me-3">
+                            <i class="fas fa-user-circle fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5>1. Share Your Preferences</h5>
+                            <p class="text-muted">Tell us about yourself and what you're interested in. The more we know, the better we can recommend!</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="bg-primary text-white rounded-circle p-3 me-3">
+                            <i class="fas fa-brain fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5>2. AI Analysis</h5>
+                            <p class="text-muted">Our advanced AI analyzes your preferences and matches them with our product catalog using sophisticated algorithms.</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start">
+                        <div class="bg-primary text-white rounded-circle p-3 me-3">
+                            <i class="fas fa-gift fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5>3. Get Personalized Results</h5>
+                            <p class="text-muted">Receive a curated list of products that best match your interests and preferences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title mb-4">Why Choose Us?</h2>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle text-primary me-2"></i>
+                            <strong>Advanced AI Technology:</strong> Cutting-edge algorithms for precise recommendations
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle text-primary me-2"></i>
+                            <strong>Personalized Experience:</strong> Tailored to your unique preferences
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle text-primary me-2"></i>
+                            <strong>Real-time Updates:</strong> Recommendations adapt as you interact
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle text-primary me-2"></i>
+                            <strong>Privacy First:</strong> Your data is secure and never shared
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 
